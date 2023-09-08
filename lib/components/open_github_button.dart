@@ -20,6 +20,7 @@ class OpenGithubButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(40)
         ),
         padding: EdgeInsets.all(20),
+        
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -30,12 +31,15 @@ class OpenGithubButton extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Icon(
+            const Icon(
               Icons.arrow_forward,
               color: Colors.white,
             ),
+         
+            
           ],
         ),
+        
       ),
     );
   }

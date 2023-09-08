@@ -12,7 +12,6 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const SizedBox(height: 15),
@@ -27,52 +26,44 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 15),
-            //slack name
+            const CircleAvatar(
+              radius: 100,
+              backgroundImage: AssetImage('lib/images/slack_image.png'),
+            ),
+
             const Text(
               "Mansur Mayaki Abdulmumin",
-              style: TextStyle(
+                style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
               ),
             ),
 
-            const SizedBox(height: 10),
-
-            // slack Id
             const Text(
-              "Student Id: HNG0038325HG",
-              style: TextStyle(
+              "Student ID: HNG0038325HG",
+                style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
               ),
             ),
 
-            const SizedBox(height: 10),
-            // Track
-            // slack Id
             const Text(
               "Track: Mobile",
-              style: TextStyle(
+                style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
               ),
             ),
 
-            //slack profile photo
-            Padding(
-              padding: const EdgeInsets.all(80.0),
-              child: Image.asset('lib/images/slack_image.png'),
-            ),
-
+            
             // Github Button
             OpenGithubButton(
               text: "Open Github",
               onTap: (){
-                Navigator.pushNamed(context, '/githubpage');
+                
               }
             ),
           ],
